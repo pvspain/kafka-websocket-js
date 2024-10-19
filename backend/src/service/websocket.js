@@ -1,7 +1,7 @@
 import { WebSocketServer } from "ws";
 
-const wss1 = new WebSocketServer({ port: 8080 });
-const wss2 = new WebSocketServer({ port: 8081 });
+const wss1 = new WebSocketServer({ port: 8085 });
+const wss2 = new WebSocketServer({ port: 8086 });
 
 const startWebSocketServers = async () => {
   wss1.on("connection", (ws) => {

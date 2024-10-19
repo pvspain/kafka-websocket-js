@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [ws1Data, setWs1Data] = useState([]);
   const [ws2Data, setWs2Data] = useState([]);
-  const [isWs1Ready, ws1Value] = useWs("ws://localhost:8080");
-  const [isWs2Ready, ws2Value] = useWs("ws://localhost:8081");
+  const [isWs1Ready, ws1Value] = useWs("ws://localhost:8085");
+  const [isWs2Ready, ws2Value] = useWs("ws://localhost:8086");
 
   useEffect(() => {
     if (isWs1Ready) {
